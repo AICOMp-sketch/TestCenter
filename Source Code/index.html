@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Center</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to the Test Center</h1>
+        <p>Your gateway to assessments and evaluations</p>
+    </header>
+    
+    <section class="intro-section">
+        <div class="card">
+            <h2>Get Started</h2>
+            <p>Take your tests in a seamless and user-friendly environment. Select a category below to begin your assessment.</p>
+        </div>
+    </section>
+    
+    <section class="categories-section">
+        <h2 class="section-title">Test Categories</h2>
+        <div class="categories-container">
+            <div class="category-card" data-category="Math">
+                <h3>Math</h3>
+                <p>Assess your mathematical skills across various topics.</p>
+            </div>
+            <div class="category-card" data-category="Science">
+                <h3>Science</h3>
+                <p>Test your knowledge in physics, chemistry, and biology.</p>
+            </div>
+            <div class="category-card" data-category="Languages">
+                <h3>Languages</h3>
+                <p>Evaluate your language proficiency and comprehension.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="test-section" id="test-section" style="display: none;">
+        <h2 class="section-title">Start Your Test - <span id="category-title"></span></h2>
+        <div class="test-container">
+            <div class="question" id="question-container">
+                <p id="question-text"></p>
+                <div class="answers" id="answers"></div>
+            </div>
+            <div class="navigation-buttons">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Test Center. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
